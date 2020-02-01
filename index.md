@@ -22,14 +22,14 @@ This is a serious classifier project to earn me some credibility.
 
 - Reinforcement Learning study *[python]*
 
-![tr](https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif)
+![mountaincar](https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif)
 
 Reasonably configurable examples of Reinforcement Learning [gridworlds](https://github.com/grelade/RL_gridworlds) and [mountain car](https://github.com/grelade/RL_mountaincar).
 
 # Silly stuff
 
-- [curling app](https://coorling.herokuapp.com/), [curling src](https://github.com/grelade/curling) *[nodejs]*
+- [curling app](https://coorling.herokuapp.com), [curling src](https://github.com/grelade/curling) *[nodejs]*
 
 To all those crazy winter olympics fanatics, here's a curling game to play online; just don't bring too many and overload the server.
 
-![](https://github.com/grelade/curling/imgs/curling.gif)
+![curling](https://github.com/grelade/curling/imgs/curling.gif)
