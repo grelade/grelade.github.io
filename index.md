@@ -20,11 +20,13 @@ This is a serious classifier project to earn me some credibility.
 
 # Fun stuff
 
-- [coorling app](https://coorling.herokuapp.com/), [coorling src](https://github.com/grelade/coorling) *[nodejs]*
+- [curling app](https://coorling.herokuapp.com/), [curling src](https://github.com/grelade/curling) *[nodejs]*
 
 To all those crazy winter olympics fanatics, here's a curling game to play online; just don't bring too many and overload the server.
 
 - Reinforcement Learning study *[python]*
-
-Reasonably configurable examples of Reinforcement Learning [gridworld](https://github.com/grelade/RL_gridworld),[cliff](https://github.com/grelade/RL_cliff) and [mountain car](https://github.com/grelade/RL_mountaincar).
+<p align="center">
+  <img src="https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif" width=300>
+</p>
+Reasonably configurable examples of Reinforcement Learning [gridworlds](https://github.com/grelade/RL_gridworlds) and [mountain car](https://github.com/grelade/RL_mountaincar).
 
