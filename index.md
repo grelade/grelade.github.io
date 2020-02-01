@@ -25,8 +25,8 @@ This is a serious classifier project to earn me some credibility.
 To all those crazy winter olympics fanatics, here's a curling game to play online; just don't bring too many and overload the server.
 
 - Reinforcement Learning study *[python]*
-<p align="center">
-  <img src="https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif" width=300>
-</p>
+
+![tr](https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif)
+
 Reasonably configurable examples of Reinforcement Learning [gridworlds](https://github.com/grelade/RL_gridworlds) and [mountain car](https://github.com/grelade/RL_mountaincar).
 
