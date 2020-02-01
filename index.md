@@ -9,10 +9,10 @@ title: Showcase
 
 - [saddle](https://github.com/grelade/saddle) *[python]*
 
-![](https://github.com/grelade/saddle/raw/master/contour_plot.png)
-
 Having some function and wondering about its minima? That's so 2019, what about stationary points?
 Try out this algorithm now and find all possible stationary points with any stability index!
+
+![](https://github.com/grelade/saddle/raw/master/contour_plot.png)
 
 # Serious projects
 
@@ -22,9 +22,9 @@ This is a serious classifier project to earn me some credibility.
 
 - Reinforcement Learning study *[python]*
 
-![mountaincar](https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif)
-
 Reasonably configurable examples of Reinforcement Learning [gridworlds](https://github.com/grelade/RL_gridworlds) and [mountain car](https://github.com/grelade/RL_mountaincar).
+
+![mountaincar](https://github.com/grelade/RL_mountaincar/raw/master/imgs/trained.gif)
 
 # Silly stuff
 
