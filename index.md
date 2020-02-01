@@ -9,6 +9,8 @@ title: Showcase
 
 - [saddle](https://github.com/grelade/saddle) *[python]*
 
+![](https://github.com/grelade/saddle/raw/master/contour_plot.png)
+
 Having some function and wondering about its minima? That's so 2019, what about stationary points?
 Try out this algorithm now and find all possible stationary points with any stability index!
 
@@ -30,4 +32,4 @@ Reasonably configurable examples of Reinforcement Learning [gridworlds](https://
 
 To all those crazy winter olympics fanatics, here's a curling game to play online; just don't bring too many and overload the server.
 
-
+![](https://github.com/grelade/curling/imgs/curling.gif)
