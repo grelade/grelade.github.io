@@ -28,8 +28,14 @@ Reasonably configurable examples of Reinforcement Learning [gridworlds](https://
 
 # Silly stuff
 
+- [memsEX](https://grelade.pythonanywhere.com), [memsEX src](https://github.com/grelade/memsEX) *[python]*
+
+Still find star wars kid funny? You're behind, catch up fast with this meme popularity analyzer. A simple meme scrape and analyze tool from reddit; identifies popular formats through clustering algorithms. Platform runs on bottlepy; scripts for either online or offline use.
+
 - [curling app](https://coorling.herokuapp.com), [curling src](https://github.com/grelade/curling) *[nodejs]*
 
 To all those crazy winter olympics fanatics, here's a curling game to play online; just don't bring too many and overload the server.
 
-![curling](https://github.com/grelade/curling/imgs/curling.gif)
+![curling](https://github.com/grelade/curling/raw/master/imgs/curling.gif)
+
+
