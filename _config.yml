@@ -1,7 +1,7 @@
 # Setup
 title:               Jacek Grela
-tagline:             'memo'
-description:         ''
+tagline:             'physics/math/ML/data'
+description:         'resume of an applied theoretical physicist'
 url:                 'https://grelade.github.io'
 baseurl:             ''
 paginate:            5
@@ -9,9 +9,9 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Jacek Grela
+  url:               
+  email:             
 
 # Gems
 plugins:
