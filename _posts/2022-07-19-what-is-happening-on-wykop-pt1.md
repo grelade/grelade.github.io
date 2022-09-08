@@ -7,6 +7,8 @@ layout: post
 
 For some time I wondered about the inner workings of <a href="http://wykop.pl">wykop.pl</a>, one of Poland's main social networks not related to GAFA behemoths. In particular, there is an ongoing discussion about the existence and character of vote brigading campaigns on the website.
 
+
+
 ## Background
 
 Wykop is a Polish community-based aggregation site similar to <a href="http://reddit.com">Reddit</a> or <a href="http://digg.com">Digg</a>.. Since its launching in 2005, it had at least a few changes when it comes to its overall character and demographics. It started out as a mecca for young IT workers, filled with elitist humor and high-quality content. With increasing popularity and a flood of new users, this geeky site gained an increasingly political flavor. Around 2015, there was a surge of suspicious activities aligned with the political campaign of the KORWiN libertarian party and centered around Janusz Korwin-Mikke, its most prominent leader. As a relatively large social medium, the site became a tool in the elections and, although KORWIN finally did not get elected, the online campaign itself was considered a success. After such seemingly grass-root campaigns organized by political activists, in the following elections, the dominant parties PiS and PO involved PR/marketing firms to similar types of campaign. These developments occurred largely in the context of the Trump election, the Brexit vote, and the general discussion around Cambridge Analytica. From thereon, the site becomes a battleground of influence wars between various groups. Today, some users report on a nebulous neuropa group whose activities on the website are considered a liberal-left reaction to previous right-leaning movements.
