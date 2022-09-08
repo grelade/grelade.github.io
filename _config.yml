@@ -24,6 +24,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/jacek-grela-278275113"}
+  - {title: Medium, icon: medium, url: "https://medium.com/@jacekgrela"}
   - {title: Github, icon: github, url: "https://github.com/grelade"}
   - {title: Quora, icon: quora, url: "https://www.quora.com/profile/Jacek-Grela"}
   - {title: Google Scholar, icon: google ,url: "https://scholar.google.com/citations?user=jp8Z9WEAAAAJ&hl=pl&oi=ao"}  
