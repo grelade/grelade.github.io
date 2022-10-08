@@ -1,5 +1,5 @@
 ---
-title: "What is happening on wykop.pl? pt. 1: Authorship structure"
+title: "What is happening on wykop.pl? pt. 1: Authors"
 layout: post
 ---
 
