@@ -1,9 +1,9 @@
 ---
-title: "What is happening on wykop.pl? pt. 1"
+title: "What is happening on wykop.pl? pt. 1: Authorship structure"
 layout: post
 ---
 
-![front](/assets/posts_img/2022-07-19.png)
+![front](/assets/posts/2022-07-19/front.png)
 
 For some time I wondered about the inner workings of <a href="http://wykop.pl">wykop.pl</a>, one of Poland's main social networks not related to GAFA behemoths. In particular, there is an ongoing discussion about the existence and character of vote brigading campaigns on the website.
 
@@ -11,7 +11,7 @@ For some time I wondered about the inner workings of <a href="http://wykop.pl">w
 
 ## Background
 
-Wykop is a Polish community-based aggregation site similar to <a href="http://reddit.com">Reddit</a> or <a href="http://digg.com">Digg</a>.. Since its launching in 2005, it had at least a few changes when it comes to its overall character and demographics. It started out as a mecca for young IT workers, filled with elitist humor and high-quality content. With increasing popularity and a flood of new users, this geeky site gained an increasingly political flavor. Around 2015, there was a surge of suspicious activities aligned with the political campaign of the KORWiN libertarian party and centered around Janusz Korwin-Mikke, its most prominent leader. As a relatively large social medium, the site became a tool in the elections and, although KORWIN finally did not get elected, the online campaign itself was considered a success. After such seemingly grass-root campaigns organized by political activists, in the following elections, the dominant parties PiS and PO involved PR/marketing firms to similar types of campaign. These developments occurred largely in the context of the Trump election, the Brexit vote, and the general discussion around Cambridge Analytica. From thereon, the site becomes a battleground of influence wars between various groups. Today, some users report on a nebulous neuropa group whose activities on the website are considered a liberal-left reaction to previous right-leaning movements.
+Wykop is a Polish community-based aggregation site similar to <a href="http://reddit.com">Reddit</a> or <a href="http://digg.com">Digg</a>. Since its launching in 2005, it had at least a few changes when it comes to its overall character and demographics. It started out as a mecca for young IT workers, filled with elitist humor and high-quality content. With increasing popularity and a flood of new users, this geeky site gained an increasingly political flavor. Around 2015, there was a surge of suspicious activities aligned with the political campaign of the KORWiN libertarian party and centered around Janusz Korwin-Mikke, its most prominent leader. As a relatively large social medium, the site became a tool in the elections and, although KORWIN finally did not get elected, the online campaign itself was considered a success. After such seemingly grass-root campaigns organized by political activists, in the following elections, the dominant parties PiS and PO involved PR/marketing firms to similar types of campaign. These developments occurred largely in the context of the Trump election, the Brexit vote, and the general discussion around Cambridge Analytica. From thereon, the site becomes a battleground of influence wars between various groups. Today, some users report on a nebulous neuropa group whose activities on the website are considered a liberal-left reaction to previous right-leaning movements.
 
 ## Motivation
 
@@ -42,7 +42,6 @@ Importantly, for now, I ignore the mikroblog activity, which is a less formal fo
 From a bird's eye view, tags are subcommunities whose properties are to be inspected statistically. Each tag has an activity parameter measured by the number of upvoted links and a size-like value measured by the number of authors creating the links. These two are plotted for each tag on a log-scale:
 
 {% include_relative 2022-07-19/fig1.html %}
-
 
 First, we are able to **identify two size regimes**. For **small tags** with a number of links less than 100, there is a sizeable number of tags with a very **flat distribution of authors** where the number of upvoted links is almost equal to the number of authors; there is **no hierarchy of active users** within the tag.
 
@@ -96,4 +95,4 @@ In this part, I inspect the global properties of user activity organized within 
 - existence of **outliers**
 - tags have either **hierarchical or egalitarian** structure when considering users' activity where a minority of users can have unparalleled influence
 
-In the second part, I plan to inspect further whether these dominant actors utilize special tactics to gain influence. 
+In the second part, I plan to inspect what are the voting structure within tags. 
