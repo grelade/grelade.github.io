@@ -59,7 +59,7 @@ We investigate how each tag is decomposed into:
 ![](/assets/posts/2022-09-27/fig2.png)
 {: refdef}
 
-We order them in descending order by the fraction of anomalous links. First, we observe that certain tags are more successful than others in producing promoted content. Easily understood examples of relative success are tags *#putin*, *#rosja*, *#ukraina* and *#wojna*, all treating the Ukraine war. On the other hand, we have a curious tag *#polska* which has an especially high fraction of false positives, which we treat as an outlier due to general character of the tag (users frequently append it besides the more relevant tags). We single out four most anomalous tags with increased fraction of false positives:
+We order them in descending order by the fraction of anomalous links. First, we observe that certain tags are more successful than others in producing promoted content. Easily understood examples of relative success are tags *#putin*, *#rosja*, *#ukraina* and *#wojna*, all treating the Ukraine war. We single out four most anomalous tags with increased fraction of false positives:
 
 <!-- We order them in descending order by the fraction of false-positive findings. Firstly, we observe that certain tags are more successful than others in producing promoted content. Easily understood examples are *#putin*, *#rosja* and *#wojna*, all treating a recent war. On the other hand, we have a curious tag *#polska* which has an especially high fraction of false positives which we treat as an outlier due to general character of the tag (i.e. users frequently add this general tag besides the main one). We single out four tags on the left side with somewhat increased fraction of false positives: -->
 
