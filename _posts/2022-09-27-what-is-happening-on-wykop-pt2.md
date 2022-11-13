@@ -6,7 +6,7 @@ usemathjax: true
 
 ![front](/assets/posts/2022-09-27/front.png)
 
-This is a continuation of the exploratory work of <a href="http://wykop.pl">wykop.pl</a> I started [some time ago]({% post_url 2022-07-19-what-is-happening-on-wykop-pt1 %}). This part focuses on voting strategies.
+This is a continuation of the exploratory work of <a href="http://wykop.pl">wykop.pl</a> I started [some time ago]({% post_url 2022-07-19-what-is-happening-on-wykop-pt1 %}). This part focuses on voting strategies. Full data can be found <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">here</a>.
 
 
 

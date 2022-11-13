@@ -5,7 +5,7 @@ layout: post
 
 ![front](/assets/posts/2022-07-19/front.png)
 
-For some time I wondered about the inner workings of <a href="http://wykop.pl">wykop.pl</a>, one of Poland's main social networks not related to GAFA behemoths. In particular, there is an ongoing discussion about the existence and character of vote brigading campaigns on the website.
+For some time I wondered about the inner workings of <a href="http://wykop.pl">wykop.pl</a>, one of Poland's main social networks not related to GAFA behemoths. In particular, there is an ongoing discussion about the existence and character of vote brigading campaigns on the website. Full data can be found <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">here</a>.
 
 
 
@@ -35,7 +35,7 @@ To collect data, I built a <a href="http://github.com/grelade/wykop-scrap">simpl
     - temporal voting structure
 * **characteristics for a user**
 
-Importantly, for now, I ignore the mikroblog activity, which is a less formal form of communication that forms a large chunk of websites' activity.
+Importantly, for now, I ignore the mikroblog activity, which is a less formal form of communication that forms a large chunk of websites' activity. Data is available publicly <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">here</a>.
 
 ## Global view
 
