@@ -7,6 +7,9 @@ excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
 usemathjax: true
 
+use_google_analytics: true
+google_analytics_id: G-QBBQCQ452M
+
 # Layout
 
 show_excerpts: true        # show article excerpts on the home page
@@ -21,14 +24,14 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html",title: "Memo"}
   - {file: "archive.html",title: "Archive"}
   # - {file: "README.md"}
-  
+
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/jacek-grela-278275113"}
   - {title: Medium, icon: medium, url: "https://medium.com/@jacekgrela"}
   - {title: Github, icon: github, url: "https://github.com/grelade"}
   - {title: Quora, icon: quora, url: "https://www.quora.com/profile/Jacek-Grela"}
-  - {title: Google Scholar, icon: google ,url: "https://scholar.google.com/citations?user=jp8Z9WEAAAAJ&hl=pl&oi=ao"}  
+  - {title: Google Scholar, icon: google ,url: "https://scholar.google.com/citations?user=jp8Z9WEAAAAJ&hl=pl&oi=ao"}
   - {title: Mail, icon: envelope, url: "mailto:jacekgrela@gmail.com"}
   # - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
