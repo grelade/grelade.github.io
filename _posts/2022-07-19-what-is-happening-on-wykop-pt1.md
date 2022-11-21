@@ -3,7 +3,7 @@ title: "What is happening on wykop.pl? pt. 1: Authors"
 layout: post
 ---
 
-![front](/assets/posts/2022-07-19/front.png)
+![front](/assets/posts/2022-07-19/front2.png)
 
 For some time I wondered about the inner workings of <a href="http://wykop.pl">wykop.pl</a>, one of Poland's main social networks not related to GAFA behemoths. In particular, there is an ongoing discussion about the existence and character of vote brigading campaigns on the website. Full data can be found <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">here</a>.
 
@@ -18,7 +18,7 @@ Wykop is a Polish community-based aggregation site similar to <a href="http://re
 I am looking for any out-of-ordinary behavior in the user's activity on the wykop website. My aim is to identify:
 
 - informal groups of influence
-- upvoting campaigns 
+- upvoting campaigns
 - botnets
 
 ## Approach and dataset
@@ -95,4 +95,4 @@ In this part, I inspect the global properties of user activity organized within 
 - existence of **outliers**
 - tags have either **hierarchical or egalitarian** structure when considering users' activity where a minority of users can have unparalleled influence
 
-In the second part, I plan to inspect what are the voting structure within tags. 
+In the second part, I plan to inspect what are the voting structure within tags.

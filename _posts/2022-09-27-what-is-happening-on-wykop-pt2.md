@@ -4,7 +4,7 @@ layout: post
 usemathjax: true
 ---
 
-![front](/assets/posts/2022-09-27/front.png)
+![front](/assets/posts/2022-09-27/front2.png)
 
 This is a continuation of the exploratory work of <a href="http://wykop.pl">wykop.pl</a> I started [some time ago]({% post_url 2022-07-19-what-is-happening-on-wykop-pt1 %}). This part focuses on voting strategies. Full data can be found <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">here</a>.
 
@@ -105,13 +105,13 @@ These types mirror the general popularity of the finding. In particular, we obse
 
 <!-- In general, the regular-above-line case contains similar types of trajectories, we cannot make a distinction based on the trajectories: -->
 
-Inspection of trajectories in the promoted and anomalous/regular-above-cutoff link groups does not reveal any differences. 
+Inspection of trajectories in the promoted and anomalous/regular-above-cutoff link groups does not reveal any differences.
 
 {:refdef: style="text-align: center;"}
 ![](/assets/posts/2022-09-27/fig5.png)
 {: refdef}
 
-<!-- 
+<!--
 
 In the plot above we show instances of major trajectory classes:
 - publication time peak, which comprise of a single peak of upvotes around the publication time. Typically it is localized.
