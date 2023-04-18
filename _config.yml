@@ -5,9 +5,9 @@ permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
-usemathjax: true
+mathjax: true
 
-use_google_analytics: false
+use_google_analytics: true
 google_analytics_id: "G-QBBQCQ452M"
 
 # Layout

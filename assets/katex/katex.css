@@ -1053,7 +1053,7 @@
   text-align: center;
 }
 .katex-display > .katex {
-  display: block;
+  display: inline; 
   text-align: center;
   white-space: nowrap;
 }
@@ -1076,4 +1076,8 @@
 body {
   counter-reset: katexEqnNo mmlEqnNo;
 }
+
+
+
+
 
