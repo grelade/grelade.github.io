@@ -41,3 +41,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-figure
