@@ -4,7 +4,7 @@ layout: post
 usemathjax: true
 ---
 
-![frontiou](/assets/posts/2023-05-20/front.png)
+![front](/assets/posts/2023-05-20/front.png)
 
 Heard of Smoluchowski? Interested in AI? Stumbled lately on these breathtaking AI-generated images? Why am I asking you these questions? Find out here.
 
@@ -16,21 +16,26 @@ Heard of Smoluchowski? Interested in AI? Stumbled lately on these breathtaking A
 
 So there's this forgotten polish physicist, [Marian Smoluchowski](https://en.wikipedia.org/wiki/Marian_Smoluchowski). In his short life he became one of the pioneers of statistical physics. One of his **major achievements** was to **explain** the **erratic motion of pollen grain** in water first reported by Brown: 
 
-{% figure caption:"extracted from a [clip](https://www.youtube.com/watch?v=R5t-oA796to)" %}
-![](/assets/posts/2023-05-20/brownian.gif){:width="35%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/brownian.gif {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="35%">
+  <figcaption>extracted from a <a href="https://www.youtube.com/watch?v=R5t-oA796to">clip</a></figcaption>
+</figure>
 
 Why is it so strange? It seems that the **grains move** quite **randomly** due to interaction with the much smaller fluid particles... But hold on. Some context is urgently needed - as shocking as it sounds today, in the **mid XIXth century**, the **existence of atoms** themselves was **a highly controversial idea**! Some argue that [Ludwig Boltzmann](https://en.wikipedia.org/wiki/Ludwig_Boltzmann), the grandfather of statistical physics, took his own life because of brutal attacks against his microscopic, atomistic description of matter. **If** however there are **no atoms**, the **fluid** is a **continuous, featureless medium** and there is no reason for the erratic motion of pollen grains to happen. Still, as was shown by Smoluchowski, the motion is the net result of many interactions with small, invisible fluid molecules:
 
-{% figure caption:"simulation [code](https://github.com/Yangliu20/physics-simulation)" %}
-![](/assets/posts/2023-05-20/brownian_sim.gif){:width="25%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/brownian_sim.gif {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="25%">
+  <figcaption>simulation <a href="https://github.com/Yangliu20/physics-simulation">code</a></figcaption>
+</figure>
 
 While he was not the only one to explain the motion (Einstein was also on it!), he embraced the atomistic perspective fully. In his seminal work[^1], he derived a fundamental result for the **average particle position** changing as a **square root of time**:
 
-{% figure %}
-![](/assets/posts/2023-05-20/basic-eq.png){:width="20%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/basic-eq.png {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="20%">
+</figure>
 
 This formula set out a number of further developments. The trembling motion is described fully by **Smoluchowski equation**[^2]:
 
@@ -56,9 +61,11 @@ $$
 
 The nontrivial part is a little bit of random function magic[^3] producing the square root $$\sqrt{\delta t}$$. We simulate it for some initial position $$x_0$$ and for $$N$$ time-steps. It is instructive to **compare single trajectories** produced by the Langevin approach matched **with the probabilistic description** provided by the Smoluchowski equation:
 
-{% figure caption:"Comparison between (single-particle) Langevin equation and (probabilistic) Smoluchowski equation" %}
-![](/assets/posts/2023-05-20/simple-diff.png){:width="80%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/simple-diff.png {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="80%">
+  <figcaption>Comparison between (single-particle) Langevin equation and (probabilistic) Smoluchowski equation</figcaption>
+</figure>
 
 In simulations we set $$a=0$$ resulting in free,unconstrained diffusive dynamics. Simulated trajectories are shown in the left plot up to time $$T = 2$$. The right plot evaluates both approaches at fixed time $$t=1$$, denoted by a red vertical line. The histogram is a result of binning the trajectories while the black line is an explcit solution to the Smoluchowski equation $$p(x,t) \sim \exp \left ( - x^2 / 4D t \right )$$.
 
@@ -68,9 +75,11 @@ In simulations we set $$a=0$$ resulting in free,unconstrained diffusive dynamics
 
 OK, it's a nice story and all but... I came here because of the AI, **what does it have to do with the cool stuff** people do nowadays? Well, let's look at the paper starting the newest generative craze **"Denoising Diffusion Probabilistic Models"** or the name [**Stable Diffusion**](https://stability.ai/blog/stable-diffusion-public-release). They happen to create truly breathtaking results:
 
-{% figure caption:"*self*-created using [Midjourney](https://www.midjourney.com/)" %}
-![](/assets/posts/2023-05-20/midjourney-example.png){:width="50%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/midjourney-example.png {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="50%">
+  <figcaption><i>self</i>-created using <a href="https://www.midjourney.com/">Midjourney</a></figcaption>
+</figure>
 
 How is this possible? Simply put - it is precisely **diffusion generalized to multiple dimensions** which turns out to be **quite powerful**. There are two main parts of a generative diffusion model.
 
@@ -135,9 +144,11 @@ def gen_x0(n = 2,scale = 200):
 
 It is concentrated on a ring of radius 1 with nonuniform angular density. The ring thickness is controlled by the  ``scale`` parameter. We show a 2D histogram of the dataset, 1D radial and 1D angular histograms:
 
-{% figure %}
-![](/assets/posts/2023-05-20/toy-dataset.png){:width="90%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/toy-dataset.png {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="90%">
+  <figcaption>Toy dataset</figcaption>
+</figure>
 
 #### Forward process
 
@@ -270,9 +281,11 @@ for n in range(n_epochs):
 
 The result after $$80$$ epochs **looks quite good**. All angular **peaks are recreated** although the four-fold symmetry was not captured correctly. The **radial distribution is recreated** very well.
 
-{% figure caption:"Toy dataset sampled from a learned diffusion model." %}
-![](/assets/posts/2023-05-20/learned-dataset.png){:width="90%"}
-{% endfigure %}
+{% capture image_url %} /assets/posts/2023-05-20/learned-dataset.png {% endcapture %}
+<figure>
+  <img src="{{ image_url }}" width="90%">
+  <figcaption>Toy dataset sampled from a learned diffusion model</figcaption>
+</figure>
 
 #### Conclusions and improvements
 
