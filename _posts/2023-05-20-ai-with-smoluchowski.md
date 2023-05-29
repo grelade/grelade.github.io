@@ -243,7 +243,7 @@ $$
 L(\theta) = E_{t\sim U(0,T)} E_{x(0)} E_{\epsilon} \left ( \lambda(t) \left \| s_\theta\left (\sqrt{c(t)}x(0) + (1-c(t)) \epsilon,t \right ) + \frac{\epsilon}{1-c(t)}\right \|^2 \right )
 $$
 
-Optimizing **current loss** function **will be unstable** due to the $$1-c$$ term in the denominator which vanishes for $$t\approx 0$$. To **help with** these **convergence** issues, we pick a weight function $$\lambda(t) = \sqrt{1-c(t)}$$. Full training loop is given below:
+Optimizing **current loss** function **will be unstable** due to the $$1-c$$ term in the denominator which vanishes for $$t\approx 0$$. To **help with** these **convergence** issues, we pick a weight function $$\lambda(t) = (1-c(t))^2$$. Full training loop is given below:
 
 ```python
 def c(t, beta_min = 1e-4, beta_max = 0.02, T = 100):
