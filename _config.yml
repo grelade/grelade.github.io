@@ -27,6 +27,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Twitter X, icon: twitter, url: "https://twitter.com/JacekGrela2501"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/jacek-grela-278275113"}
   - {title: Medium, icon: medium, url: "https://medium.com/@jacekgrela"}
   - {title: Github, icon: github, url: "https://github.com/grelade"}
@@ -42,3 +43,5 @@ comments:
 plugins:
  - jekyll-feed
  # - jekyll-figure
+
+exclude: [dump]
