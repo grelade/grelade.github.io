@@ -1,6 +1,7 @@
-title: "Jacek Grela"
+title: "On the crossroads"
+subtitle: "Jacek Grela"
 author: "Jacek Grela"
-description: "my personal website"
+description: "Jacek Grela"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -12,17 +13,18 @@ google_analytics_id: "G-QBBQCQ452M"
 
 # Layout
 
-show_excerpts: true        # show article excerpts on the home page
+show_excerpts: false        # show article excerpts on the home page
 show_frame: true           # adds a gray frame to the site
-show_sidebar: true        # show a sidebar instead of the usual header
-minimal: false             # use a dark header
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: true             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html",title: "CV"}
+  - {file: "blog.html",title: "Blog"}
   - {file: "projects.md",title: "Projects"}
-  - {file: "index.html",title: "Memo"}
-  - {file: "archive.html",title: "Archive"}
+  # - {file: "archive.html",title: "Archive"}
   # - {file: "README.md"}
 
 

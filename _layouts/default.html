@@ -46,8 +46,10 @@ MathJax.Hub.Config({
 {% endif %}
 
 <header>
-    <div>
-        <a href="{{ "/" | relative_url }}" class="title">{{ site.title | escape }}</a>
+    <div class="updiv">
+        <h2>{{ site.title | escape }}</h2>
+        <h4>{{site.subtitle}}</h4>
+        {% include menu.html menu=site.external %}
     </div>
   {% include menu.html menu=pages %}
 </header>

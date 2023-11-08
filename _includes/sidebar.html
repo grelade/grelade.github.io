@@ -1,14 +1,15 @@
 <link rel="stylesheet" href="{{ "/assets/css/sidebar.css" | relative_url }}" media="screen and (min-width: 70em)">
 <aside style="display: none">
-    
+
 <div class="sidebar-item">
     <div class="sidebar-personal-info">
       <div class="sidebar-personal-info-section sidebar-title">
           <h2>{{ site.title }}</h2>
+          <!-- <h4>{{ site.subtitle }}</h4> -->
       </div>
-        
+
       <div class="sidebar-personal-info-section">
-        <p class="sidebar-paragraph"> 
+        <p class="sidebar-paragraph">
     {%- for item in site.external -%}
     {%- assign node = site.pages | where: "name", item.file | first -%}
     {%- assign url = item.url | default: node.url -%}
@@ -17,7 +18,7 @@
     <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
       <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
     </a>
-    {%- endfor -%}            
+    {%- endfor -%}
 
         </p>
       </div>
@@ -25,7 +26,7 @@
         <img src="/assets/img/photo.png"/>
       </div>
       <div class="sidebar-personal-info-section">
-          
+
         <p class="sidebar-bottom">
            theoretical physicist<br>
            works @ <a href="https://uj.edu.pl">Jagiellonian University</a><br>
@@ -34,8 +35,8 @@
       </div>
     </div>
   </div>
-    
-    
+
+
 <!--   <div class="sidebar-item">
     <div class="sidebar-personal-info">
     <div class="sidebar-personal-info-section">
@@ -43,7 +44,7 @@
     </div>
     <div class="sidebar-personal-info-section"></div>
     <div class="sidebar-personal-info-section"></div>
-        
+
   </div> -->
   <nav>
   {%- for item in site.navigation -%}

@@ -1,0 +1,260 @@
+
+<article class="cv">
+
+  <div class="cv_header">
+    <div class="cv_card"><a href="mailto:jacekgrela@gmail.com" alt="Contact me"><img class="cv_image" src="/assets/img/photo.png"/></a>
+
+      <h5>Jacek GRELA</h5>
+      <hr class="cv_hr">
+      <b>physics | math | ML</b>
+      <hr class="cv_hr_sub">
+      <!-- <a href="mailto:jacekgrela@gmail.com">jacekgrela@gmail.com</a><br> -->
+      {%- for item in site.external -%}
+      {%- assign node = site.pages | where: "name", item.file | first -%}
+      {%- assign url = item.url | default: node.url -%}
+      {%- assign title = item.title | default: node.title -%}
+      {%- assign icon = item.icon | default: item.sidebaricon -%}
+      <a aria-label="{{ title }}" href="{{ url | relative_url }}" {% if url == page.url %}class="selected"{% endif %}>
+        <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ icon }}"></use></svg>
+      </a>
+      {%- endfor -%}
+    </div>
+    <div class="description">
+<hr class="cv_hr">
+<b>Profile</b><br>
+<hr class="cv_hr_sub">
+I am a researcher with background in physics, fascinated by the crossroads between mathematics, machine learning and data science. My academic track record, application of ML techniques, and interdisciplinary work in neuroscience underscore my versatility. I strongly believe that the cross-fertilization of ideas complemented with technical prowess gives me a unique edge in problem-solving.
+    </div>
+
+  </div>
+
+  <div class="cv_section">
+    <hr class="cv_hr"/>
+    <h5>Work experience</h5>
+    <hr class="cv_hr_sub"/>
+    <ul>
+      <li><p class="place">Jagiellonian University</p><p class="period">March 2020 - Septmeber 2023</p></li>
+      <p class="desc">
+        <b>Researcher</b><br>
+        <!-- <i>Bringing physics, ML and neuroscience together.</i> -->
+      </p>
+      <ol>
+        <li>Development of the Single Label One-Versus-All (SLOVA), a post-processing method which enhances usual neural-network-based classifiers with uncertainty-aware outputs to counteract the issue of over-confidence often exhibited by such models.<br><a href="/assets/pdf/publ/slova2022.pdf">[paper]</a></li>
+        <li>Utilizing statistical physics to investigate the dynamics of biological brains, we bolster the brain criticality hypothesis by demonstrating the brain's resilience in the face of stroke-like lesions.<br><a href="/assets/pdf/publ/brain2023.pdf">[paper]</a> <a href="https://github.com/grelade/critical-stroke">[github]</a></li>
+        <li>Integrating multifractal-based feature selection techniques with gradient boosting decision trees to construct an early Alzheimer's disease classifier using structural MRI scans.<br><a href="https://github.com/grelade/fractal-alzheimer">[github]</a></li>
+      </ol>
+      <li><p class="place">Queen Mary University of London</p><p class="period">August 2018  - March 2020</p></li>
+      <p class="desc">
+        <b>Postdoctoral research assistant</b><br>
+        <!-- Applying random matrix theory to stability of complex systems. -->
+      </p>
+      <ol>
+        <li>Applying random matrix theory to the stability analysis of complex systems, investigating changes in stability hierarchy.<br><a href="/assets/pdf/publ/grela2022.pdf">[paper]</a> <a href="https://github.com/grelade/saddle">[github]</a></li>
+        <li>Collaboratively organizing a Reinforcement Learning study group.<br><a href="https://github.com/grelade/RL_gridworlds">[github 1]</a> <a href="https://github.com/grelade/RL_mountaincar">[github 2]</a></li>
+      </ol>
+      <li><p class="place">LPTMS CNRS Universite Paris-Sud</p><p class="period">October 2016 - October 2018</p></li>
+      <p class="desc">
+        <b>Postdoctoral researcher</b><br>
+        <!-- Connections between free fermions and random matrices. -->
+      </p>
+      <ol>
+        <li>Exploiting the relationship between random matrices and non-interacting fermionic gas, we derive the complete distribution of its kinetic energy.<br><a href="/assets/pdf/publ/grela2017_joined.pdf">[paper]</a></li>
+        <li>Exploring transient dynamics within non-reciprocal systems, we establish a crucial link between eigenvectors and the magnitude of transient phenomena.<br><a href="/assets/pdf/publ/grela2017.pdf">[paper]</a></li>
+        <li>Obtaining an exact solution for a multivariate Brownian bridge induced by random matrix dynamics through the application of Burgers' equation.<br><a href="/assets/pdf/publ/Grela2021_Article_Non-intersectingBrownianBridge.pdf">[paper]</a></li>
+      </ol>
+      <!-- <li><p class="place">Melbourne University (<i>Melbourne, Australia</i>)</p><p class="period">March 2015 - August 2015</p></li>
+      <p class="desc">
+        Endeavor Scholarship.<br> Collaboration with prof. P. J. Forrester on dynamical random matrices.
+      </p>
+      <li><p class="place">Duisburg-Essen Universitat (<i>Duisburg, Germany</i>)</p><p class="period">October 2014 - January 2015</p></li>
+      <p class="desc">
+        Erasmus+ programme.<br> Collaboration with prof. T. Guhr on non-hermitian random matrices.
+      </p> -->
+    </ul>
+  </div>
+
+  <div class="cv_section">
+    <hr class="cv_hr"/>
+    <h5>Selected projects</h5>
+    <hr class="cv_hr_sub"/>
+    <ul>
+      <li><p class="place"><a href="https://github.com/grelade/fractal-alzheimer">Fractal Alzheimer model</a></p></li>
+      <p class="desc">
+        <i>ML model predicting Alzheimer's disease based on multifractal features of MRI scans.</i>
+      </p>
+        <ol>
+          <li>Implementation of nested cross validation</li>
+          <li>Study of resampling methods to imbalanced datasets</li>
+          <li>Results for KNN, Support Vector Classifier and Gradient Boosted Decision Tree</li>
+          <li>Tech stack: <b>scikit-learn</b>, <b>lightgbm</b></li>
+        </ol>
+      </p>
+      <li><p class="place"><a href="https://github.com/grelade/mmx">MMX backend</a></p></li>
+
+      <p class="desc">
+        <i>ML-based meme analyzer tool</i>
+      </p>
+        <ol>
+          <li>Identifying popularity of memes by similarity clustering using a neural network</li>
+          <li><a href="https://mmx-frontend.vercel.app/">Test frontend</a> is provided</li>
+          <li>Tech stack: <b>docker</b>, <b>flask</b>, <b>tensorflow_lite</b></li>
+        </ol>
+
+      <li><p class="place"><a href="https://github.com/grelade/vidcaption-ml">Vidcaption-ML</a></p></li>
+      <p class="desc">
+        <i>Production-ready video captioning server</i>
+      </p>
+        <ol>
+          <li>Video captioning server based on flask (single GPU setup) or torchserve (multiple GPU setup)</li>
+          <li>Fully asynchronous sample clients provided</li>
+          <li>Captions handled by a huggingface <a href="https://huggingface.co/Salesforce/blip2-opt-2.7b">BLIP-2 + OPT</a> img2txt model</li>
+          <!-- <li>Used in the preparation of the <a href="">Putin video dataset</a></li> -->
+          <li>Tech stack: <b>flask</b>/<b>torchserve</b>, <b>huggingface</b>, <b>asyncio</b></li>
+        </ol>
+      <li><p class="place"><a href="https://github.com/grelade/wykop-scrap">Wykop-scrap</a></p></li>
+      <p class="desc">
+        <i>Large dataset scraping pipeline</i>
+      </p>
+        <ol>
+          <li>Set of scripts for scraping data from a social media website <a href="http://wykop.pl">wykop.pl</a></li>
+          <li>Used in the preparation of <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">wykop-data-2022</a> dataset found on Kaggle.</li>
+          <li>Used in the three-part exploratory data analysis described in a set of blogposts <a href="https://grelade.github.io/what-is-happening-on-wykop-pt1/">[1]</a>, <a href="https://grelade.github.io/what-is-happening-on-wykop-pt2/">[2]</a> and <a href="https://grelade.github.io/what-is-happening-on-wykop-pt3/">[3]</a></li>
+          <li>Tech stack: <b>beautifulsoup</b>, <b>pandas</b></li>
+        </ol>
+    </ul>
+  </div>
+
+  <div class="cv_section">
+    <hr class="cv_hr"/>
+    <h5>Education</h5>
+    <hr class="cv_hr_sub"/>
+    <ul>
+      <li><p class="place">Jagiellonian University</p><p class="period">2012-2016</p></li>
+      <p class="desc">
+        <b>PhD in Physics</b><br>
+        Thesis <i><a href="/assets/pdf/thesis.pdf">"Dynamics of eigenvalues and eigenvectors in non-Hermitian matrix models"</a></i> on random matrix theory.
+      </p>
+      <li><p class="place">Jagiellonian University</p><p class="period">2010-2012</p></li>
+      <p class="desc">
+        <b>MPhys in Theoretical Physics</b>
+      </p>
+      <li><p class="place">AGH University of Science and Technology</p><p class="period">2006-2010</p></li>
+      <p class="desc">
+        <b>BSc in Applied Physics</b>
+      </p>
+    </ul>
+  </div>
+
+  <div class="cv_section">
+    <hr class="cv_hr"/>
+    <h5>Courses</h5>
+    <hr class="cv_hr_sub"/>
+    <ul>
+      <li><p class="place">Python programming - basic Level</p></li>
+      <li><p class="place">Creating web applications in Python & Azure deployment</p></li>
+    </ul>
+  </div>
+
+  <div class="cv_section">
+    <hr class="cv_hr"/>
+    <h5>Skills</h5>
+    <hr class="cv_hr_sub"/>
+    <div class="twocols">
+    <ul>
+      <li><p class="place">IT Skills</p></li>
+      <ol>
+        <li>Programming: <i>advanced</i></li>
+        <li>Machine Learning: <i>advanced</i></li>
+        <li>Data Analysis: <i>advanced</i></li>
+        <li>Cloud computing: <i>basic</i></li>
+      </ol>
+      <li><p class="place">IT Tools</p></li>
+      <ol>
+        <li>Operating system: Linux</li>
+        <li>Programming: Python, C/C++</li>
+        <li>Version Control: GIT</li>
+        <li>Virtualization: Docker</li>
+        <li>Project Management: Trello</li>
+        <li>Cloud: Azure, AWS</li>
+      </ol>
+    </ul>
+    <ul>
+      <li><p class="place">Machine Learning / Data Science</p></li>
+      <ol>
+        <li>Deep Learning: pytorch, keras, huggingface</li>
+        <li>Machine Learning: scikit-learn, pandas, scipy</li>
+        <li>Visualization: matplotlib, seaborn</li>
+        <li>Databases: SQL, MongoDB, pyspark</li>
+      </ol>
+      <li><p class="place">Soft skills</p></li>
+      <ol>
+        <li>Analytical thinking</li>
+        <li>Problem solving</li>
+        <li>Scientific communication</li>
+      </ol>
+      <li><p class="place">Other skills</p></li>
+      <ol>
+        <li>Languages: english (C1, CAE exam), french (B1)</li>
+        <li>Scientific software: Mathematica, LaTeX</li>
+        <li>Other: flask, asyncio</li>
+      </ol>
+    </ul>
+  </div>
+  </div>
+
+  <div class="cv_section">
+    <hr class="cv_hr"/>
+    <h5>Selected papers</h5>
+    <hr class="cv_hr_sub"/>
+    <ul class="small">
+      <li><p class="place"><a href="/assets/pdf/publ/brain2023.pdf">Investigating structural and functional aspects of the brain's criticality in stroke</a></p><p class="period"><b>Sci. Rep.</b> 13 (1), 12341 (2023)</p></li>
+      <p class="desc">
+        J. Janarek, Z. Drogosz, J. Grela, J. K. Ochab, P. Oświęcimka
+      </p>
+      <li><p class="place"><a href="/assets/pdf/publ/slova2022.pdf">SLOVA: Uncertainty estimation using single label one-vs-all classifier</a></p><p class="period"><b>Appl. Soft Comput.</b> 126, 109219 (2022)</p></li>
+      <p class="desc">
+        B. Wójcik, J. Grela, M. Śmieja, K. Misztal, J. Tabor
+      </p>
+      <li><p class="place"><a href="/assets/pdf/publ/grela2022.pdf">Glass-like transition described by toppling of stability hierarchy</a></p><p class="period">J. Phys. A: Math. Theor. 55 154001 (2022)</p></li>
+      <p class="desc">
+        J. Grela, B. A. Khoruzhenko
+      </p>
+      <li><p class="place"><a href="/assets/pdf/publ/Grela2021_Article_Non-intersectingBrownianBridge.pdf">Non-intersecting Brownian bridges in the flat-to-flat geometry</a></p><p class="period">J. Stat. Phys. 183, 49 (2021)</p></li>
+      <p class="desc">
+        J. Grela, S. N. Majumdar, G. Schehr
+      </p>
+      <li><p class="place"><a href="/assets/pdf/publ/grela2018.pdf">Full Dysonian dynamics of the complex Ginibre ensemble</a></p><p class="period">J. Phys. A: Math. Theor. 51, 425203 (2018)</p></li>
+        <p class="desc">
+          J. Grela, P. Warchoł
+        </p>
+        <li><p class="place"><a href="/assets/pdf/publ/grela2017.pdf">What drives transient behaviour in complex systems?</a></p><p class="period">Phys. Rev. E 96, 022316 (2017)</p></li>
+        <p class="desc">
+          J. Grela
+        </p>
+        <li><p class="place"><a href="/assets/pdf/publ/grela2017_joined.pdf">Kinetic energy of a trapped Fermi gas at finite temperature</a></p><p class="period"><b>Phys. Rev. Lett.</b> 119, 130601 (2017)</p></li>
+        <p class="desc">
+          J. Grela, S. N. Majumdar, G. Schehr
+        </p>
+        <li><p class="place"><a href="/assets/pdf/publ/grela2016.pdf">Exact spectral densities of complex noise-plus-structure random matrices</a></p><p class="period">Phys. Rev. E 94, 042130 (2016)</p></li>
+        <p class="desc">
+          J. Grela, T. Guhr
+        </p>
+        <li><p class="place"><a href="/assets/pdf/publ/forrester2016.pdf">Hydrodynamical spectral evolution for random matrices</a></p><p class="period">J. Phys. A: Math. Theor. 49 085203 (2016)</p></li>
+        <p class="desc">
+          P.J. Forrester, J. Grela
+        </p>
+        <li><p class="place"><a href="/assets/pdf/publ/grela2015.pdf">Diffusion method in Random Matrix Theory</a></p><p class="period">J. Phys. A: Math. Theor. 49 015201 (2015)</p></li>
+        <p class="desc">
+          J. Grela
+        </p>
+      <li><p class="place"><a href="/assets/pdf/publ/burda2014.pdf">Dysonian dynamics of the Ginibre ensemble</a></p><p class="period"><b>Phys. Rev. Lett.</b> 113, 104102 (2014)</p></li>
+      <p class="desc">
+        Z. Burda, J. Grela, M. A. Nowak, W. Tarnowski, P. Warchoł
+      </p>
+    </ul>
+    <i><a href="/assets/pdf/2023-09-05-publ-list-en.pdf">[complete publcation list]</a></i>
+  </div>
+
+</article>
+
+
