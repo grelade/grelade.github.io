@@ -1,0 +1,120 @@
+---
+layout: default
+title: "Projects"
+permalink: "/projects/"
+---
+
+<article id="fractal-alzheimer">
+    <header>
+        <h1><a href="https://github.com/grelade/fractal-alzheimer">Fractal Alzheimer</a></h1>
+        <h5><p><a href="https://github.com/grelade/fractal-alzheimer">[github]</a></p><p><i>tech stack</i>: scikit-learn, lightgbm</p></h5>
+        <time>10.11.2023</time>
+    </header>
+
+    <p>
+        <img src="https://github.com/grelade/fractal-alzheimer/blob/master/dataplot.png?raw=true">
+    </p>
+    <p>
+        Feasibility study of using fractal-aware features in classifying Alzheimer's disease.
+        Features are extracted based on MRI scans while we investigate three types of classifiers:
+        <ol>
+            <li>k-nearest neighbor</li>
+            <li>support vector classifier</li>
+            <li>gradient-boosted decision trees</li>
+        </ol>
+
+        The training comprises of nested cross-validation framework and a resampling procedure which helps with the unbalanced dataset.
+    </p>
+
+</article>
+
+<article id="mmx">
+    <header>
+        <h1><a href="https://github.com/grelade/mmx">MMX backend API</a></h1>
+        <h5><p><a href="https://github.com/grelade/mmx">[github]</a> <a href="https://mmxalpha.bieda.it/api/v1">[backend API]</a> <a href="https://mmx-frontend.vercel.app/">[test frontend]</a></p><p><i>tech stack</i>: docker, flask, tensorflow_lite</p></h5>
+        <time>01.10.2023</time>
+    </header>
+
+    <p>
+        <img src="/assets/projects/mmx.png">
+    </p>
+    <p>
+        A tool for meme scraping and AI-based analysis of meme clustering. Works as a API server based on docker and written in Flask. mmx has 4 containers:
+        <ul>
+            <li><b>mmx:scrape</b> - handles online scraping of memes and saves it to the mongodb database</li>
+            <li><b>mmx:feat_extract</b> - continuously takes in the memes, calculates for each meme image a feature vector using an efficientnet-v2 model compressed with tensorflow_lite package.  </li>
+            <li><b>mmx:api</b> - API server for user requests</li>
+            <li><b>mmx:nginx</b> - reverse-proxy nginx server used in a production ready API server</li>
+        </ul>
+
+        Both test backend and example frontend are available online.
+    </p>
+
+</article>
+
+<article id="vidcaption-ml">
+    <header>
+        <h1><a href="https://github.com/grelade/vidcaption-ml">Vidcaption-ML</a></h1>
+        <h5><p><a href="https://github.com/grelade/vidcaption-ml">[github]</a></p><p><i>tech stack</i>: flask, torchserve, huggingface, asyncio</p></h5>
+        <time>01.10.2023</time>
+    </header>
+
+    <p>
+        <img src="/assets/projects/vidcaption-ml.png">
+    </p>
+    <p>
+        A tool for creating video captions in bulk. Uses the <a href="https://huggingface.co/Salesforce/blip2-opt-2.7b">BLIP-2 + OPT</a> img2txt model as the captioning module.
+        Comes in two variants:
+        <ul>
+            <li><b>single GPU</b> - uses flask as the server</li>
+            <li><b>multiple GPUs</b> - uses torchserve as the server</li>
+        </ul>
+
+        Both versions have few example scripts to be used on the request side.
+        Single GPU version is simpler for smaller tasks while the multiple GPUs version is more flexible and has the ability to work in the batch and stream modes.
+
+    </p>
+
+</article>
+
+<article id="wykop-scrap">
+    <header>
+        <h1><a href="https://github.com/grelade/wykop-scrap">Wykop-scrap</a></h1>
+        <h5><p><a href="https://github.com/grelade/wykop-scrap">[github]</a> <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">[kaggle]</a> <a href="https://grelade.github.io/what-is-happening-on-wykop-pt1/">[blog]</a></p><p><i>tech stack</i>: beautifulsoup, pandas</p></h5>
+        <time>01.10.2023</time>
+    </header>
+
+    <p>
+        <img src="/assets/posts/2022-09-27/fig0.png">
+    </p>
+    <p>
+
+        A set of scripts for a large dataset scraping project.
+        Used to download extensive information from the social medium <a href="http://wykop.pl">wykop.pl</a> website, available on Kaggle as a public dataset <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">wykop-data-2022</a>.
+        Dataset consists of a 6 months of links published on the page with the 500 most popular tags.
+        Each link has information on its creator, popularity and status. Used in preparation for a set of blogposts:
+
+        <ul>
+            <li><a href="https://grelade.github.io/what-is-happening-on-wykop-pt1/">What is happening on wykop? pt.1: Authors</a></li>
+            <li><a href="https://grelade.github.io/what-is-happening-on-wykop-pt2/">What is happening on wykop? pt.2: Voting Strategies</a></li>
+            <li><a href="https://grelade.github.io/what-is-happening-on-wykop-pt3/">What is happening on wykop? pt.3: Voter groups</a></li>
+        </ul>
+
+        This analysis concluded that on the website there exist:
+        <ul>
+            <li>time-resolved activity of some users point towards bot-like actviity</li>
+            <li>a simple criterion for link promotion was identified (see the plot above)</li>
+            <li>existence of cooperative user clusters which upvote/downvote same links</li>
+        </ul>
+        <!-- Feasibility study of using fractal-aware features in classifying Alzheimer's disease.
+        Features are extracted based on MRI scans while we investigate three types of classifiers:
+        <ol>
+            <li>k-nearest neighbor</li>
+            <li>support vector classifier</li>
+            <li>gradient-boosted decision trees</li>
+        </ol>
+
+        The training comprises of nested cross-validation framework and a resampling procedure which helps with the unbalanced dataset. -->
+    </p>
+
+</article>
