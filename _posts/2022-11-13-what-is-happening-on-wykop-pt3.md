@@ -3,7 +3,8 @@ title: "What is happening on wykop.pl? pt. 3: Voter groups"
 layout: post
 usemathjax: true
 ---
-![front](/assets/posts/2022-11-13/front.png)
+
+<a href="{% post_url 2022-11-13-what-is-happening-on-wykop-pt3 %}">![front](/assets/posts/2022-11-13/front.png)</a>
 
 This is the last part of exploratory work on <a href="http://wykop.pl">wykop.pl</a> started [here]({% post_url 2022-07-19-what-is-happening-on-wykop-pt1 %}) and [here]({% post_url 2022-09-27-what-is-happening-on-wykop-pt2 %}). We focus on finer activity of both single voters and voter groups. Full data can be found <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">here</a>.
 

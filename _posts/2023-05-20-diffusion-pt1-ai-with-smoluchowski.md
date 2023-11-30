@@ -4,7 +4,7 @@ layout: post
 usemathjax: true
 ---
 
-![front](/assets/posts/2023-05-20/front-pt1.png)
+<a href="{% post_url 2023-05-20-diffusion-pt1-ai-with-smoluchowski %}">![front](/assets/posts/2023-05-20/front-pt1.png)</a>
 
 Interested in AI? Heard of Smoluchowski? Have you stumbled lately on any breathtaking AI-generated images? Why am I asking you these questions? Find out here.
 

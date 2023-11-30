@@ -4,7 +4,7 @@ layout: post
 usemathjax: true
 ---
 
-![front](/assets/posts/2023-05-20/front-pt2.png)
+<a href="{% post_url 2023-05-20-diffusion-pt2-nano-diffusion %}">![front](/assets/posts/2023-05-20/front-pt2.png)</a>
 
 Implementation of diffusion models look hard? Do not fret - fortunately there's no need to introduce fancy ML techniques to understand the underlying mechanisms. In this post I discuss how to learn a 2D synthetic dataset with a simple vanilla feed-forward network (or the nano diffusion). [Code](https://github.com/grelade/nano-diffusion/blob/master/nano-notebook.ipynb) is provided. 
 

@@ -3,7 +3,8 @@ title: "Arbitrage in the wild"
 layout: post
 usemathjax: true
 ---
-![front](/assets/posts/2023-04-15/front.png)
+
+<a href="{% post_url 2023-04-15-arbitrage-in-the-wild %}">![front](/assets/posts/2023-04-15/front.png)</a>
 
 What is arbitrage? Has it gone extinct in the modern age? How to spot it in the wild? Is there any physics involved?
 

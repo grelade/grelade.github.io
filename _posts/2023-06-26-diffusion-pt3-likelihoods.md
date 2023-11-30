@@ -4,7 +4,7 @@ layout: post
 usemathjax: true
 ---
 
-![front](/assets/posts/2023-06-26/front-pt3.png)
+<a href="{% post_url 2023-06-26-diffusion-pt3-likelihoods %}">![front](/assets/posts/2023-06-26/front-pt3.png)</a>
 
 Diffusive models provide good results when it comes to sampling the learned data. Unfortunately, most of the out-of-the-box solutions cannot access the underlying data likelihood. In this post we discuss ways to overcome it. [Code](https://github.com/grelade/diffusion-primer/blob/master/likelihood-notebook.ipynb) is provided.
 
