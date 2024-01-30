@@ -6,7 +6,7 @@
 
       <h5>Jacek GRELA</h5>
       <hr class="cv_hr">
-      <b>physics | math | ML</b>
+      <b>ML | Physics | Data</b>
       <hr class="cv_hr_sub">
       <!-- <a href="mailto:jacekgrela@gmail.com">jacekgrela@gmail.com</a><br> -->
       {%- for item in site.external -%}
@@ -23,7 +23,10 @@
 <hr class="cv_hr">
 <b>Profile</b><br>
 <hr class="cv_hr_sub">
-I am a researcher with a solid foundation in physics, fascinated by the crossroads between mathematics, machine learning and data science. My academic track record, coupled with my experience in applying machine learning, along with my interdisciplinary collaboration in the field of neuroscience, highlight my versatility and passion for tackling complex challenges. I firmly believe that the synergy of diverse ideas, combined with my technical expertise, equips me with a distinctive advantage in problem-solving.
+<!-- I am a researcher with a solid foundation in physics, fascinated by the crossroads between mathematics, machine learning and data science. My academic track record, coupled with my experience in applying machine learning, along with my interdisciplinary collaboration in the field of neuroscience, highlight my versatility and passion for tackling complex challenges. I firmly believe that the synergy of diverse ideas, combined with my technical expertise, equips me with a distinctive advantage in problem-solving. -->
+
+I am an academically-proven researcher with experience in adata science and working knowledge of machine learning algorithms. I enjoy conducting data-driven research and developing actionable solutions. I firmly believe that my physics background coupled with technical expertise equips me with a distinctive advantage in problem-solving. As an independent researcher I thrive in novel environments and take a proactive attitude to problems.
+
     </div>
 
   </div>
@@ -33,7 +36,7 @@ I am a researcher with a solid foundation in physics, fascinated by the crossroa
     <h5>Work experience</h5>
     <hr class="cv_hr_sub"/>
     <ul>
-      <li><p class="place">Jagiellonian University</p><p class="period">March 2020 - Septmeber 2023</p></li>
+      <li><p class="place">Jagiellonian University</p><p class="period">March 2020 - </p></li>
       <p class="desc">
         <b>Researcher</b><br>
         <!-- <i>Bringing physics, ML and neuroscience together.</i> -->
@@ -78,49 +81,89 @@ I am a researcher with a solid foundation in physics, fascinated by the crossroa
     <h5>Selected projects</h5>
     <hr class="cv_hr_sub"/>
     <ul>
-      <li><p class="place"><a href="/projects/#fractal-alzheimer">Fractal Alzheimer study</a></p></li>
+      <li><p class="place">[DATA] [ML] <a href="/projects/#fractal-alzheimer">Diagnosis of Alzheimer’s disease</a></p></li>
       <p class="desc">
-        <i>ML model predicting Alzheimer's disease based on multifractal features of MRI scans.</i>
+        <i>Development and evaluation of ML algorithms for identification of early-stage Alzheimer’s disease based on fractal properties of MRI scans.</i>
       </p>
         <ol>
-          <li>Implementation of nested cross validation</li>
-          <li>Study of resampling methods to imbalanced datasets</li>
+          <li>Used nested cross validation</li>
+          <li>Addressing imbalanced dataset via resampling methods</li>
           <li>Results for KNN, Support Vector Classifier and Gradient Boosted Decision Tree</li>
           <li>Tech stack: <b>scikit-learn</b>, <b>lightgbm</b></li>
         </ol>
       </p>
-      <li><p class="place"><a href="/projects/#mmx">MMX backend API</a></p></li>
 
+      <li><p class="place">[DATA] <a href="projects/#wykop-eda">Exploratory Data Analysis of social media data</a></p></li>
       <p class="desc">
-        <i>ML-based meme analyzer tool</i>
+        <i>Formulation and development of an extensive EDA study of social media dataset.</i>
       </p>
         <ol>
-          <li>Identifying popularity of memes by similarity clustering using a neural network</li>
+          <li>Aim of the analysis is to search for patterns of organization in the data. We focus on both single and composite actors of influence from clandestine communities to bot-like users</li>
+          <li>Study found cooperative voter communities gathered around certain tags, singled out bots and identified a curious pattern of link promotion in terms of upvote-to-downvote ratio</li>
+          <li>Preparation of three-part exploratory data analysis report in a series of posts <a href="https://grelade.github.io/what-is-happening-on-wykop-pt1/">[1]</a>, <a href="https://grelade.github.io/what-is-happening-on-wykop-pt2/">[2]</a> and <a href="https://grelade.github.io/what-is-happening-on-wykop-pt3/">[3]</a></li>
+          <li>Tech stack: <b>plotly</b>, <b>pandas</b>, <b>statsmodels</b></li>
+        </ol>
+      </p>
+
+      <li><p class="place">[DATA] [ML] Identification of pulsars</p></li>
+      <p class="desc">
+        <i>Preparation of feasibility report on using various ML models to identify pulsar stars.</i>
+      </p>
+        <ol>
+          <li>Use of SMOTE algorithm to mitigate unbalanced classes</li>
+          <li>Results on Support Vector Classifiers, K-Nearest Neighors and a Neural Network using Average precision metric</li>
+          <li>Tech stack: <b>scikit-learn</b>, <b>imblearn</b></li>
+        </ol>
+      </p>
+
+      <li><p class="place">[DATA] <a href="projects/#wykop-scrap">Large-scale social media data scrape</a></p></li>
+      <p class="desc">
+        <i>Development and execution of a large dataset scraping pipeline.</i>
+      </p>
+        <ol>
+          <li>Set of scripts for scraping data from a social media website <a href="http://wykop.pl">wykop.pl</a></li>
+          <li>Multi-level dataset on links, voters and tags</li>
+          <li>Full dataset is available on Kaggle <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">wykop-data-2022</a></li>
+          <li>Tech stack: <b>beautifulsoup</b>, <b>pandas</b></li>
+        </ol>
+      </p>
+
+      <li><p class="place">[ML] <a href="/projects/#mmx">Meme trends analyzer</a></p></li>
+
+      <p class="desc">
+        <i>Idea and development of <i>MMX</i> - an ML-based analyzer of meme trends.</i>
+      </p>
+        <ol>
+          <li>Flask-based backend API</li>
+          <li>Identifying popularity of memes by feature extraction using a pretrained neural network combined with  vector search in mongoDB</li>
           <li><a href="https://mmx-frontend.vercel.app/">Test frontend</a> is provided</li>
           <li>Tech stack: <b>docker</b>, <b>flask</b>, <b>tensorflow_lite</b></li>
         </ol>
 
-      <li><p class="place"><a href="/projects/#vidcaption-ml">Vidcaption-ML</a></p></li>
+      <li><p class="place">[ML] <a href="/projects/#vidcaption-ml">Video captioning pipeline</a></p></li>
       <p class="desc">
-        <i>Production-ready video captioning server</i>
+        <i>Development of a high-throughput, asynchronous client-server pipeline for captioning video content.</i>
       </p>
         <ol>
           <li>Video captioning server based on flask (single GPU setup) or torchserve (multiple GPU setup)</li>
           <li>Fully asynchronous sample clients provided</li>
-          <li>Captions handled by a huggingface <a href="https://huggingface.co/Salesforce/blip2-opt-2.7b">BLIP-2 + OPT</a> img2txt model</li>
+          <li>Captions handled by huggingface's <a href="https://huggingface.co/Salesforce/blip2-opt-2.7b">BLIP-2 + OPT</a> img2txt model</li>
           <!-- <li>Used in the preparation of the <a href="">Putin video dataset</a></li> -->
+          <li>Preparation of a blog post explaining the torchserve setup <a href="https://grelade.github.io/captioning-in-bulk/">is here</a></li>
           <li>Tech stack: <b>flask</b>/<b>torchserve</b>, <b>huggingface</b>, <b>asyncio</b></li>
         </ol>
-      <li><p class="place"><a href="projects/#wykop-scrap">Wykop-scrap</a></p></li>
+
+      <li><p class="place">[ML] How generative diffusion models work?</p></li>
       <p class="desc">
-        <i>Large dataset scraping pipeline</i>
+        <i>A series of blog posts on the inner workings of generative diffusion models.</i>
       </p>
         <ol>
-          <li>Set of scripts for scraping data from a social media website <a href="http://wykop.pl">wykop.pl</a></li>
-          <li>Used in the preparation of <a href="https://www.kaggle.com/datasets/grelade/wykop-data-2022">wykop-data-2022</a> dataset found on Kaggle.</li>
-          <li>Used in the three-part exploratory data analysis described in a set of blogposts <a href="https://grelade.github.io/what-is-happening-on-wykop-pt1/">[1]</a>, <a href="https://grelade.github.io/what-is-happening-on-wykop-pt2/">[2]</a> and <a href="https://grelade.github.io/what-is-happening-on-wykop-pt3/">[3]</a></li>
-          <li>Tech stack: <b>beautifulsoup</b>, <b>pandas</b></li>
+          <li>Materials discussing essential mechanisms behind generative diffusion models</li>
+          <li>Accompanying notebooks containing elementary working examples</li>
+          <li>Preparation of pedagogical blog posts <a href="https://grelade.github.io/diffusion-pt1-ai-with-smoluchowski/">[1]</a> <a href="https://grelade.github.io/diffusion-pt2-nano-diffusion/">[2]</a> and <a href="https://grelade.github.io/diffusion-pt3-likelihoods/">[3]</a></li>
+          <li>Tech stack: <b>pytorch</b>, <b>seaborn</b></li>
         </ol>
+
     </ul>
   </div>
 
@@ -147,15 +190,18 @@ I am a researcher with a solid foundation in physics, fascinated by the crossroa
 
   <div class="cv_section">
     <hr class="cv_hr"/>
-    <h5>Courses</h5>
+    <h5>Courses & Certificates</h5>
     <hr class="cv_hr_sub"/>
     <ul>
       <li><p class="place"></p></li>
         <ol>
-          <li>Python programming - basic level</li>
-          <li>Creating web applications in Python & Azure deployment</li>
+          <li><a href="https://www.datacamp.com/certificate/DSA0015965439117">Data Scientist Associate Certificate</a></li>
+          <li><a href="https://courses.nvidia.com/certificates/0461d05678b445ddb296bccfec9db2c2/">Building Transformer-Based Natural Language Processing Applications</a></li>
           <li><a href="https://www.udemy.com/course/statistics-for-data-science-and-business-analysis/">Statistics for Data Science and Business Analysis</a></li>
           <li><a href="https://www.udemy.com/course/data-science-in-python-data-prep-eda/">Data Science in Python: Data Prep & EDA</a></li>
+          <li>Creating web applications in Python & Azure deployment</li>
+          <li>Python programming - basic level</li>
+
         </ol>
     </ul>
   </div>
